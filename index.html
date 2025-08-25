@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediShop - Professional Medical Equipment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MediShop</h1>
+    <p>Your Trusted Source for Medical Equipment</p>
+  </header>
+  <main>
+    <section id="controls">
+      <div>
+        <input type="text" id="quantity" placeholder="Enter quantity (1-10)">
+        <select id="item-select">
+          <option value="0">Stethoscope</option>
+          <option value="1">Blood Pressure Monitor</option>
+          <option value="2">Thermometer</option>
+          <option value="3">Syringe Pack</option>
+        </select>
+        <button id="calculate-btn">Calculate Total</button>
+        <p id="total-output">Total: ugx 0.00</p>
+      </div>
+      <div>
+        <input type="number" id="price-filter" placeholder="Max price filter">
+        <button id="filter-btn">Filter by Price</button>
+      </div>
+      <button id="toggle-theme">Toggle Theme</button>
+    </section>
+    <section id="equipment-list"></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
